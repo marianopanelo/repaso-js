@@ -9,24 +9,47 @@
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
-    <h1>Ingresar</h1>
     <header>
         <img src="../imagenes/logo.png" alt="logo de la empresa" class="logo">
         <h1>Banco CB</h1>
-        <nav>
+        <nav class="nav">
             <ul>
                 <li><a href="../index.html">inicio</a></li>
-                <li id="servicios">Servicios
+                <li id="servicios"><a href="#">Servicios
                     <ul id="submenu-servicios">
                         <li><a href="./prestamos.html">Préstamos</a></li>
                         <li><a href="./plazo_fijo.html">Plazo fijos</a></li>
                     </ul>
+                </a>
                 </li>
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
-
+    <main>
+        <div class="container">
+            <h2 class="registro_h2">Registro de Datos</h2>
+            <form id="registroForm" action="#" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
+                </div>
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+    </main>
 
 
     <footer>
